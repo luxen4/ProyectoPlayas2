@@ -1,0 +1,111 @@
+
+
+
+#ningun_destino h3{
+  color: red; margin: 1em; text-decoration: underline;
+}
+
+/*General*/
+label{font-weight: bolder; font-size: 1em; color: #006293;} 
+li{ list-style:none;} 
+
+/* Perfil Agencias y Cliente */
+.infoperfil{font-size: 1.5em; color: #212721; font-weight: bolder; text-decoration: underline;}
+.s{text-decoration: none; color: #006293;}
+
+/*Table*/
+#tabla1{margin-top: 1em;}
+table{margin: 0 auto; border: black solid 2px ; text-align: center; font-size: 1.1em;}
+
+th, td{border:1px solid #006293; text-align: center;}
+td{padding:0.5em;} 
+tbody tr,thead tr{background-color:  #F6f6f6;}
+
+tbody tr:hover{background-color:#E7E4D0;}
+tbody tr:hover{color:#212721;}
+
+.izda{margin-left: 1em;}
+
+.margin1{margin-left: 6em;}
+.margin2{margin-right: 2em; margin-left: 4em;}
+
+.setecientos{width: 1300px;} 
+.setecientos{width: 900px;}
+
+
+  
+input:focus
+{ -webkit-transition: 0.8s;
+transition: 0.8s;
+background-color: #eee;
+border: 2px solid #555;
+}
+
+
+.admin{color: red; text-decoration: underline;}
+
+
+.casillas{margin-top: 2em;}
+
+#consulta{ display: flex;}
+
+
+/* Ver Perfil */
+.infoperfil{
+  color:#212721;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+/* Ver Perfil */ 
+.s{text-decoration: none; color: #006293;}
+#nohay{color:red; font: 4em sans-serif; text-align: center;}
+
+ /*MEDIAQUERYS*/
+  
+ @media only screen and (min-width: 1101px) and (max-width: 4000px) {
+}
+
+@media only screen and (min-width: 1801px) and (max-width: 1900px) {
+}
+
+@media only screen and (min-width: 1225px) and (max-width: 1800px) {  
+}
+
+
+/* Código para Tablets */
+@media only screen and (min-width: 1200px) and (max-width: 1400px) { 
+}
+
+/* Código para Tablets */
+@media only screen and (min-width: 926px) and (max-width: 1200px) {
+}
+  
+
+@media only screen and (min-width: 810px) and (max-width: 925px) {
+}
+
+@media only screen and (min-width: 513px) and (max-width: /*1000*/809px) {
+  #tabla1{margin-top: 1em;
+    transform: scale(0.8);
+    margin-left: -10em;
+}
+  .letra{font-size: 1em;}
+}
+
+
+@media only screen and (min-width: 511px) and (max-width: 512px) {
+  #tus_destinos, .letra{font-size: 1em; } 
+}
+
+
+/* Código para Móvil */
+@media only screen and (min-width: 310px) and (max-width: 510px){
+  .letra{font-size: 1em; margin-top: 1em;} 
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 309px) {
+  .letra{font-size: 0.5em; margin-top: 1em;} 
+}
+

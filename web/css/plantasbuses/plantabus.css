@@ -1,0 +1,14 @@
+/* Código mútuo para todas plantas de bus */
+
+.fotoplantabus{ transform: rotate(-90deg); margin-left: -3em; }
+.junto{ display: flex; margin-bottom: -10em;}
+ 
+#alante img{ width: 170px;  margin-top: 4em; height: 500px; /*margin-left: -79em;*/}
+
+.bloque_asiento{ display: flex;}
+.brazo_izdo{ margin-bottom: -0.2em;}
+.respaldo{padding-bottom: 1em; margin-top: -0.3em; margin-left: 1em;}
+.asiento:hover{background-color: orange;}
+
+ 
+

@@ -1,0 +1,243 @@
+agencia GO TRAVEL
+diaViaje Miercoles
+fecha 2 Septiembre
+destino Laredo
+precio 14 euros
+compañiaTransporte Logrobús
+horaSalidaInicio 8:00h
+horaVueltaDestino 19:00h
+<Meter los demás datos de GO Travel>
+
+
+----------------------------------------------------------------------
+
+"Poniente"
+codigoAgencia 001 
+NIF *********
+nombre Club Tercera Edad "Poniente" 
+direcion calle Beratúa, 36 bajo
+ciudad Logroño
+provincia La Rioja
+horarioAgencia 10:00 a 13:00 y 17:00 a 20:00
+teléfonoContacto 686175433
+ 
+
+Viajes Excursiones año 2020
+
+idViaje 001001
+diaViaje Domingo
+fecha 21 Junio
+destino Santander
+compañiaTransporte Autobuses Jimenez         				Hacer la tabla de autobús
+direcionDeSalida Colegio Batalla De Clavijo
+horaSalidaInicio 8:00h
+direcionDeVuelta Estación de autobuses
+horaVueltaDestino 19:00h
+precio 13 euros
+
+001001,Domingo,20200621,Santander,Cantabria,Cantabria,España,Autobuses Jimenez,C/General Urrutia'Colegio Batalla De Clavijo',8h,salida de la playa,19h,13
+001002,Domingo,20200628,Isla,Cantabria,Cantabria,España,Autobuses Jimenez,Colegio Batalla De Clavijo,8h,salida de la playa,19h,13
+001003,Domingo,20200705,Noja,Cantabria,Cantabria,España,Autobuses Jimenez,Colegio Batalla De Clavijo,8h,salida de la playa,19h,13
+001004,Domingo,20200705,Plencia,Vizcaya,Pais Vasco,España,Autobuses Jimenez,8hColegio Batalla De Clavijo,salida de la playa,19h,13
+001005,Domingo,20200712,Santoña,Cantabria,Cantabria,España,Autobuses Jimenez,8hColegio Batalla De Clavijo,salida de la playa,19h,13
+001006,Domingo,20200719,San Sebastian,Guipuzcoa,Pais Vasco,España,Autobuses Jimenez,8h,Colegio Batalla De Clavijo,Estación de autobuses,19h,13
+001006,Domingo,20200726,San Juan De Luz,(departamento)Pirineos Atlánticos,(región)Nueva Aquitania,Francia,Autobuses Jimenez,Colegio Batalla De Clavijo,8h,calle19h,13
+001007,Domingo,20200809,Zarautz,Guipuzcoa,Pais Vasco,España,Autobuses Jimenez,Colegio Batalla De Clavijo,8h,calle,19h,13
+001008,Domingo,20200816,Fuenterrabia/Hondarribia,Guipuzcoa,Pais Vasco,España,Autobuses Jimenez,8h,Colegio Batalla De Clavijo,calle,19h,13
+001009,Domingo,20200823,Endaya,(departamento)Pirineos Atlánticos,(región) Aquitania,Francia,Autobuses Jimenez,Colegio Batalla De Clavijo,8h,Calle,19h,13
+001009,Domingo,20200830,Lekeitio,Vizcaya,Pais Vasco,España,Autobuses Jimenez,Colegio Batalla De Clavijo,8h,Calle,19h,13
+001010,Domingo,20200906,Laredo,Cantabria,Cantabria,España,Autobuses Jimenez,Colegio Batalla De Clavijo,8h,Estacion de autobuses,19h,13
+001011,Domingo,20200913,Castro,Cantabria,Cantabria,España,Autobuses Jimenez,Colegio Batalla De Clavijo,8h,calle,19h,13
+001012,Domingo,20201011,Zaragoza,Zaragoza,Aragon,España,Autobuses Jimenez,Colegio Batalla De Clavijo,8h,calle,19h,13
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+"GO TRAVEL CLUB" PlayaBus
+
+codigoAgencia 002 
+NIF *********
+nombre "GO TRAVEL CLUB" 
+direcion Avda Jorge Vigón 7-9
+ciudad Logroño
+provincia La Rioja
+horarioAgencia 10:00 a 13:00 y 17:00 a 20:00
+teléfonoContacto 643674634
+telefonoReservas 653107390 // Pago online a través de BBVA-PAYGOLD, "GO TRAVEL TOUR" AVDA JORGE VIGÓN 7-9,Logroño-La Rioja
+email info.gotraveltour@gmail.com
+
+
+
+
+
+
+
+Septiembre
+002001,Miercoles,20200902,Laredo,Cantabria,Cantabria,España,Autobuses Logrobús,Jorge Vigón 7 (estatua Labrador, lado Carmelitas)8h,Estacion de autobuses,19h,12
+002002,Sábado,20200905,Hendaya,(departamento)Pirineos Atlánticos,(región) Aquitania,Francia,Autobuses Logrobús,Jorge Vigón 7 (estatua Labrador, lado Carmelitas)8h,Estacion de autobuses,19h,13
+002003,Domingo,20200906,Biarritz,(departamento)Pirineos Atlánticos,(región)Nueva Aquitania,Francia,Autobuses Logrobús,Jorge Vigón 7 (estatua Labrador, lado Carmelitas)8h,Estacion de autobuses,19h,14
+002004,Miercoles,20200909,Zarautz,Guipuzcoa,Pais Vasco,España,Autobuses Logrobús,Jorge Vigón 7 (estatua Labrador, lado Carmelitas)8h,Estacion de autobuses,19h,12
+002005,Sábado,20200912,Laredo,Cantabria,Cantabria,España,Autobuses Logrobús,Jorge Vigón 7 (estatua Labrador, lado Carmelitas)8h,Estacion de autobuses,19h,13
+002006,Domingo,20200913,Castro urdiales,Cantabria,Cantabria,España,Autobuses Logrobús,Jorge Vigón 7 (estatua Labrador, lado Carmelitas)8h,Estacion de autobuses,19h,14
+002007,Miercoles,20200916,Zumaia,Guipuzcoa,Pais Vasco,España,Autobuses Logrobús,Jorge Vigón 7 (estatua Labrador, lado Carmelitas)8h,Estacion de autobuses,19h,12
+002008,Sabado,20200919,Zarautz,Guipuzcoa,Pais Vasco,España,Autobuses Logrobús,Jorge Vigón 7 (estatua Labrador, lado Carmelitas)8h,Estacion de autobuses,19h,13
+002009,Domingo,20200920,San Sebastian,Guipuzcoa,Pais Vasco,España,Autobuses Logrobús,Jorge Vigón 7 (estatua Labrador, lado Carmelitas)8h,Estacion de autobuses,19h,14
+002010,Miercoles,2020,Castro urdiales,Cantabria,Cantabria,España,Autobuses Logrobús,Jorge Vigón 7 (estatua Labrador, lado Carmelitas)8h,Estacion de autobuses,19h,12
+002011,Sábado,20200926,Laredo,Cantabria,Cantabria,España,Autobuses Logrobús,Jorge Vigón 7 (estatua Labrador, lado Carmelitas)8h,Estacion de autobuses,19h,13
+002012,Domingo,20200927,San Juan De Luz,(departamento)Pirineos Atlánticos,(región)Nueva Aquitania,Francia,Autobuses Logrobús,Jorge Vigón 7 (estatua Labrador, lado Carmelitas)8h,Estacion de autobuses,19h,14
+
+Viaje a la playa de Salou en San Mateo* Salida desde Logroño a las 7.00 h dia 19/09 y regreso el 21/09 después de comer (17.30 h).(Salimos con el desayuno)
+3 dias y 2 noches. Hotel 3* en média pensión.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+"VIAJES AZUL MARINO" PLAYA BUS
+autobuses Logrobús.   14 adulto 
+Eslogan/edición...Domingos a la playa
+
+codigoAgencia 004
+NIF *********
+nombre "VIAJES AZUL MARINO" 
+direcion C/Lardero 3
+ciudad Logroño
+provincia La Rioja
+horarioAgencia 10:00 a 13:00 y 17:00 a 20:00
+teléfonoContacto no sé
+telefonoReservas nada // Pago online nada
+email nada
+
+Julio
+004001,Domingo,20200705,Santander,Cantabria,Cantabria,España,Autobuses Logrobús,Cafetería Ibiza-Muro de la Mata 7,8h,Salida de la playa,19h,14
+004002,Domingo,20200712,Laredo,Cantabria,Cantabria,España,Autobuses Logrobús,Cafetería Ibiza-Muro de la Mata 7,8h,Salida de la playa,19h,14
+004003,Domingo,20200719,Noja,Cantabria,Cantabria,España,Autobuses Logrobús,Cafetería Ibiza-Muro de la Mata 7,8h,Salida de la playa,19h,14
+004004,Domingo,20200726,Plencia,Vizcaya,Pais Vasco,España,Autobuses Logrobús,Cafetería Ibiza-Muro de la Mata 7,8h,Salida de la playa,19h,14
+
+Agosto
+004005,Domingo,20200802,San Sebastian,Guipuzcoa,Pais Vasco,España,Autobuses Logrobús,Cafetería Ibiza-Muro de la Mata 7,8h,Salida de la playa,19h,14
+004006,Domingo,20200809,San Juan De Luz,(departamento)Pirineos Atlánticos,(región)Nueva Aquitania,Francia,Autobuses Logrobús,Cafetería Ibiza-Muro de la Mata 7,8h,Salida de la playa,19h,14
+004007,Domingo,20200816,Biarritz,(departamento)Pirineos Atlánticos,(región)Nueva Aquitania,Francia,Autobuses Logrobús,Cafetería Ibiza-Muro de la Mata 7,8h,Salida de la playa,19h,14		/*Sepodría quitar tanta redundancia de datos*/
+004008,Domingo.20200823,Zumaia,******,******
+004009,Domingo,20200830,Fuenterrabia,****,****
+
+Septiembre
+004010,Domingo,20200906,Guetaria,***,****
+004011,Domingo,20200913,Castro Urdiales,*****,******
+
+
+
+
+--------------------------------------------------------------------------------------------------
+"FEDERACION REGIONAL DE PENSIONISTAS Y JUBILADOS DE CC.OO (LA RIOJA)"
+			Precio de Billete 12euros (afiliados 10 euros)
+			Salida de la estación de autobuses (8.00 H.)
+codigoAgencia 005
+NIF *********
+nombre "FEDERACION REGIONAL DE PENSIONISTAS Y JUBILADOS DE CC.OO (LA RIOJA)"
+direcion C/Pio XII 1
+ciudad Logroño
+provincia La Rioja
+horarioAgencia Despacho de Billetes: Lunes Martes y Miercoles (de 11h a 13h)
+teléfonoContacto 602263181
+telefonoReservas nada // Pago online nada
+email nada
+
+
+Julio
+005001,Jueves,Plencia,Vizcaya,Pais Vasco,España,Autobuses***,Estación autobuses de Logroño, Avenida de España 1,8h,Estacion de autobuses,19h,14
+005002,Jueves,Santander,
+005003,Jueves,Zarautz,
+005004,Jueves,Laredo,
+005005,Jueves,San Sebastián,
+
+
+
+
+Agosto
+005006,Jueves,Castro Urdiales,
+005007,Jueves,Lekeitio,Vizcaya,Pais Vasco,España,***,***
+005008,Jueves,Fuerterrabia,
+005009,Jueves,Santoña,
+
+
+Septiembre
+005010,Jueves,Zumaia,
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------
+"VIAJES GRAN RESERVA" PLAYA BUS
+autobuses propios de Yanguas.   14 adulto 11 euros niño(menores hasta 10años)
+
+codigoAgencia 003
+NIF *********
+nombre "VIAJES GRAN RESERVA" 
+direcion C/Vara de Rey 41
+ciudad Logroño
+provincia La Rioja
+horarioAgencia 10:00 a 13:00 y 17:00 a 20:00
+teléfonoContacto 602263181
+telefonoReservas nada // Pago online nada
+email nada
+
+
+salidas 7:30H Albelda de Iregua 
+	7:40H Alberite de Iregua
+	7:50H Lardero
+	8:00H Logroño
+
+14 euros en Septiembre, los otros meses era los Miercoles a 12 euros.
+
+
+Junio
+003001,Sabado,20200627,Laredo,Cantabria,Cantabria,España,Autobuses Yanguas,Estación autobuses de Logroño, Avenide de España 1,8h,Estacion de autobuses,19h,14
+003002,Domingo,20200628,Castro Urdiales,****,*****
+
+Julio
+004003,Sabado,20200704,Zarautz,****,****
+004004,Domingo,20200705,Laredo,******,****
+004005,Sabado,20200711,Hondarribia,****,****
+004006,Domingo,20200712,Santander,*****,****
+004007,Sabado,20200718,Catro Urdiales,*****,****
+004008,Domingo,20200719,San Juan De Luz,****,****
+004009,Sabado,20200725,Santoña,Cantabria,Cantabria,España,Autobuses Yanguas,Estación autobuses de Logroño, Avenide de España 1,8h,Estacion de autobuses,19h,14
+004010,Domingo,2020726,San Sebastián,*****,*****
+
+Agosto
+004011,Sabado,20200801,Zumaia,****,****
+004012,Domingo,20200802,Hendaya,*****,****
+004013,Sabado,20200808,San Sebastián,****,****
+004014,Domingo,20200809,Castro Urdiales,******,****
+004015,Sabado,20200815,Laredo,****,****
+004016,Domingo,20200816,Biarritz,*****,*****
+004016,Sabado,20200822,San Juan De Luz,****,****
+004017,Domingo,20200823,Santander,****,****
+004018,Sabado,20200828,Plencia,****,****
+004019,Domingo,20200830,San Sebastian,****,*****
+
+
+
+
+Septiembre
+003001,Sabado,20200905,Biarritz,(departamento)Pirineos Atlánticos,(región)Nueva Aquitania,Francia,Autobuses Yanguas,Estación autobuses de Logroño, Avenide de España 1,8h,Estacion de autobuses,19h,14
+003002,Domingo,20200906,San Juan De Luz,(departamento)Pirineos Atlánticos,(región)Nueva Aquitania,Francia,Autobuses Yanguas,Estación autobuses de Logroño, Avenide de España 1,8h,Estacion de autobuses,19h,14
+003003,Sabado,20200912,Castro Urdiales,Castro urdiales,Cantabria,Cantabria,España,Autobuses Yanguas,Estación autobuses de Logroño, Avenide de España 1,8h,Estacion de autobuses,19h,14
+003004,Domingo,20200913,Hendaya,(departamento)Pirineos Atlánticos,(región) Aquitania,Francia,Autobuses Yanguas,Estación autobuses de Logroño, Avenide de España 1,8h,Estacion de autobuses,19h,14
+
+
+----------------------------------------------------------------------------------------------------------------------
+<Zafiro Tour>
+	Paradas de recoger gente.
+						tabla de personas
+
+
+
+
+

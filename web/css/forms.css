@@ -1,0 +1,148 @@
+
+/* -FORMULARIOS- */
+
+form{padding: 1em;}
+#titulo h1{ color: #006293; padding: 0.5em;}
+
+
+/* Casillas de inputs*/
+.cont { background-color: #f6f6f6; border: 2px solid #212721; border-radius: 5px; text-align: center; margin-top:0.2em; padding-bottom: 0.8em;}
+.ok{color:green; font-weight: 600;} .error{color:red; font-weight: 600;}  
+
+
+/* Estas seguro? */  
+#seg{margin: 0.2em auto; margin: 1em auto;}
+#estaseguro input, #estaseguro2 input[type=checkbox] { transform: scale(1.5);margin-right: 0.5em;}
+
+
+
+#botones{text-align:center;}
+#botones input{ 
+        width: 150px; height: 50px;  
+        border: 2px solid #006293;
+        font-weight: bolder; color: #006293 ;/*Azul marino bordes e icono;*/
+        border-radius: 5px;  text-align:center; background-color:#f6f6f6;
+}  
+#botones input:hover, .apuntar:hover{background-color:grey; color: #f6f6f6;}
+
+
+input[type=checkbox] {transform: scale(2); margin-right: 0.5em;}
+.checkboxtext{display: inline; margin-left: 0.5em;  }
+
+
+
+@media only screen and (min-width: 1901px) and (max-width: 3000px) {}
+
+@media only screen and (min-width: 1801px) and (max-width: 1900px) {
+  h4{color:#E40513; font-size: 1.2em !important;}
+  .fotoplantabus{width: 480px; height:210px; margin-top:8em; margin-left: 5em;/*font-size: 1.5em;*/ /*color: white;*/}
+
+}
+
+@media only screen and (min-width: 1225px) and (max-width: 1800px) {
+  .fotoplantabus{width: 480px; height:210px; margin-top:8em; margin-left: 5em;/*font-size: 1.5em;*/ /*color: white;*/}
+
+}
+
+
+/*MEDIAQUERYS*/
+
+/* Código para Tablets */
+@media only screen and (min-width: 1000px) and (max-width: 1224px) {
+.silverfox {min-height: 500px; /* max-width: 400px;*/ background-size: cover; background-position: center;}
+.articulo h3, .articulo h4{font-size: 0.7em;}
+header img{height:400px;}                                                                                                           /* Para las fotos del Slider */
+
+
+.fotodestino{ width: 100%;}
+.fotoplantabus{width: 580px; height:310px; margin-top:8em; margin-left: -6em;/*font-size: 1.5em;*/ /*color: white;*/}
+
+
+}
+  
+@media only screen and (min-width: 926px) and (max-width: 999px) {
+ 
+.plaza{font-size: 1em;} 
+h2{font-size: 1.3em;}
+header img{height:200px;}
+.articulo h3{font-size: 0.9em;}
+.articulo h4{font-size: 0.7em;}
+.fotoplantabus{margin-top: 6em; }
+
+/* Enlaces del toogle*/
+#navbarNavDropdown li a {
+  padding-top: 0.2em;
+  font-size: 1.5em;
+}
+
+
+/* Enlaces del footer */
+#container_footer h1 {
+  font-size: 1.7em;
+}
+
+/* Enlaces del footer */
+#container_footer h3{
+  text-align: left; font-size: 1em;
+  margin-left: 0.5em;
+  }
+
+}
+
+@media only screen and (min-width: 810px) and (max-width: 925px) {
+.silverfox {/*background:url(http://laya.atwebpages.com/proyectomodohost/web/imagenes/fondo2.png) center center;*/}
+.articulo h3, .articulo h4{font-size: 0.9em;}
+header img{height:300px;}                                                                                               /* Para las fotos del Slider */
+.fotoplantabus{width: 370px; margin-top: 6em;}
+.plaza{font-size: 0.9em;}
+.textodestino{font-size: 1.2em; /*margin-left: 1em;*/ }
+
+
+
+#seguridad{ margin: 1em;}
+
+ /*MEDIAQUERYS*/
+  
+ @media only screen and (min-width: 1101px) and (max-width: 4000px) {
+}
+
+@media only screen and (min-width: 1801px) and (max-width: 1900px) {
+}
+
+@media only screen and (min-width: 1225px) and (max-width: 1800px) {  
+}
+
+
+/* Código para Tablets */
+@media only screen and (min-width: 1200px) and (max-width: 1400px) { 
+}
+
+/* Código para Tablets */
+@media only screen and (min-width: 926px) and (max-width: 1200px) {
+}
+  
+
+@media only screen and (min-width: 810px) and (max-width: 925px) {
+}
+
+@media only screen and (min-width: 513px) and (max-width: /*1000*/809px) {
+
+#estaseguro{margin: 0 auto;}
+#estaseguro input, #estaseguro2 input[type=checkbox] {transform: scale(1);}}
+
+
+@media only screen and (min-width: 513px) and (max-width: /*1000*/809px) {
+}
+
+
+@media only screen and (min-width: 511px) and (max-width: 512px) {
+
+}
+
+/* Código para Móvil */
+@media only screen and (min-width: 310px) and (max-width: 510px) { 
+}
+
+@media only screen and (min-width: 100px) and (max-width: 309px) {
+}
+

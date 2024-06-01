@@ -1,0 +1,5 @@
+[
+    {"nombre": "Juan", "edad": 25, "correo": "juan@example.com"},
+    {"nombre": "Ana", "edad": 30, "correo": "ana@example.com"},
+    {"nombre": "Pedro", "edad": 22, "correo": "pedro@example.com"}
+]

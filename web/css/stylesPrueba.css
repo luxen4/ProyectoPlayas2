@@ -1,0 +1,315 @@
+input, select{width: 100px;}
+
+[type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+  width: 83px;
+}
+
+h2, h1{ text-align: left;}
+/* Navegación */
+body{background-color: #E5F6FE;}
+.navbar-light .navbar-brand { background-color: #E5F6FE; color: #006293; font-size:4em;}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  position: absolute;
+}
+
+.dropdown-item:hover{color: #212721;}
+
+.navbar-light .navbar-nav .nav-link:hover,
+
+.navbar-light .navbar-toggler-icon { background-color: white; border-radius: 4px;}
+
+
+/* Imagenes del Carrusel */
+header img{padding: 0px; }
+.w-100 {height: 400px; margin: auto;}
+
+#bienvenida{font-size: 1.5em; text-decoration: underline; color: #006293; background-color: #E5F6FE;}
+
+pre{ background-color: white;}
+
+
+#contenido{
+  padding-bottom: 1em;
+  background-image:url("../imagenes/fondo3.jpg"); background-size: cover;
+}
+
+/* Título del contenido*/
+.container h1{color: #006293; text-align: center; margin-top: 0.5em; text-decoration: underline;}
+
+
+
+/* Filtros */
+.tres{padding: 0.2em; text-align:center;}
+.front{
+  background-image:url('https://i.imgur.com/W3tra4F.gif');
+  box-shadow: 5px 5px 5px #aaa; border-radius: 0.2em;
+}
+
+
+/*
+#navbarNavDropdown li a .nav-link{font-size: 1.5em; margin-top: 2.5em;}
+.navbar-expand-lg .navbar-nav .dropdown-menu {position: absolute; margin-left: 2em;}
+*/
+
+
+.silverfox {
+  /*Asignamos una altura mínima */
+  /*min-height: 400px; max-width: 1275px; min-width: 1275px;*/ 
+  /*background-image: url('web/imagenes/fondo1.jpg');*/
+  /*background-color: #F8F9FA;*/
+  /*require_once $_SERVER['DOCUMENT_ROOT'] . '/proyecto/web/imagenes/fondo.jpg');*/
+  background-size: cover; 
+  background-position: center;
+}
+ 
+/* Cards */
+.articulo{background-color: #F8F9FA;
+  border-radius: 0.4em;
+  border: 2px solid #c1c1c1;
+  padding: 0.5em 0.3em 0.3em;
+  box-shadow: inset 0px 0px 20px 4px #c1c1c1;
+  width: 363px;
+  margin-left: -3.4em; box-shadow: inset 0px 0px 20px 4px #c1c1c1;}
+
+
+article{margin-top: 1em;}
+article p{margin-bottom: 0em; margin-left: 2.2em;}
+
+
+
+.comunidad{ font-size: 1.2em; color: #006293; font-weight: bold; text-align: center; margin: auto;}
+.fotodestino{border-radius: 0.3em; z-index: -1; width: 150px; height: 150px;}
+ 
+.destino a {font-size: 1.2em; text-decoration: underline; font-weight: bold;}
+.textodestino{font-size: 1.3em;}
+#fecha_precio{margin-top: -1em;}
+.fecha{color: #006293; font-weight: bold; font-size: 0.7em;}
+.info_plazas{ color: #006293; font-size: 1em; font-weight: 600;} 
+.precio{color: #006293; font-size: 1.2em; font-weight: bold;} 
+.textoprecio{font-size: 1.3em; float: right; text-align: right; }
+.apuntar, .apuntar2{font-weight: bolder; border-radius:0.5em; padding: 0em; }
+.apuntar{ color: #006293;  border: 2px solid #006293; margin-left: 2em;}
+.apuntar2{ color: red;  border: 2px solid red;     margin-left: 2em;}
+#boton_apuntar{ padding-top: -2em; border-radius: 0.5em; margin: auto;}
+.agencia{display: none; color: #006293;} 
+/*-----------------------------------------------------------------------------------*/
+
+
+#tus_destinos{ font-size: 0.7em;}
+
+
+
+
+/* Footer */
+#container_footer h1{ text-decoration: underline;}
+#container_footer h3{font-size: 1em;margin-left: 1em;} 
+
+footer{background-color: #F8F9FA;}
+footer, footer a{color: #006293; font-weight: bold; font-size: 1.2em;}
+footer a:hover{color: #212721;}
+
+footer h1{ margin: 0.5em; font-size: 2em;}
+
+h1{text-decoration: underline  #0a58ca 2px;}
+#copyright a{font-size: 1.2em;}
+/*--------------------------------------*/
+
+.todo{/*background-color: #212721!important; color: white; height: 50em; z-index: -1; margin-top: -50em;*/}
+
+.navbar-light .navbar-nav .nav-link { color: #006293; font-weight: bold;}
+
+#container_footer{
+  /* background-image:url("../imagenes/fondo1.jpg")!important; background-size: cover; */
+  background-color: #F8F9FA;}
+
+
+@media (min-width: 1200px){
+ /* .w-100 {height: 500px; margin: auto;}*/
+  .fotodestino{ height: 100px; width: 100px;}
+
+/* Footer */
+#copyright{background-color: #F8F8F8; padding-bottom: 1.8em; padding-bottom:0.7em}
+
+#copyright h3{color: white;}
+
+}
+
+@media only screen and (min-width: 1901px) and (max-width: 3000px) {
+}
+
+@media only screen and (min-width: 1801px) and (max-width: 1900px) {
+  .fotoplantabus{width: 480px; height:210px; margin-top:8em; margin-left: 5em;}
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 3000px) {
+  .navbar-light .navbar-nav .nav-link {margin-top: 3em;}
+  h2{ margin-left: 3em; text-decoration: underline  #0a58ca 2px;}
+  #container_footer h3{margin-left: 5em;} 
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 3000px) {
+.precio{font-size: 1.5em; } 
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+  .fotoplantabus{width: 480px; height:210px; margin-top:8em; margin-left: 5em;}
+}
+
+
+/* Código para Tablets */
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+.fotodestino{height: 150px;}
+header img{height:400px;}                                                                                                          
+
+/* Cards */
+.destino { font-size: 1.6em;}
+.fotodestino{ margin-top: 0.5em; border-radius: 0.3em; z-index: -1; width: 100%; height: 200px; }
+.fotoplantabus{width: 580px; height:310px; margin-top:8em; margin-left: -6em;}
+.precio {font-size: 1em;}
+
+
+
+
+}
+  
+@media only screen and (min-width: 740px) and (max-width: 999px) {
+
+.a{width: 375px; height:140px; margin-top: 7.5em;}
+.plaza{font-size: 1em;} 
+h2{font-size: 1.3em;}
+header img{height:200px;}
+
+.fotoplantabus{margin-top: 6em; }
+
+/* Cards */
+.comunidad {font-size: 1.4em;}
+.destino { font-size: 1.4em;}
+.fotodestino{ margin-top: 0em; height: 160px;}
+.textodestino{font-size: 1.2em;}
+.info_plazas {font-size: 0.6em;}
+/*--------------------------------*/
+
+/* Enlaces del footer */
+#navbarNavDropdown li a {padding-top: 0.2em; font-size: 1em;}
+#container_footer h1 {font-size: 1.7em;}
+#container_footer h3{ text-align: left; font-size: 1em; margin-left: 0.5em;}
+footer h2 {font-size: 2em; font-size: 1.4em; font-weight: bold;}
+
+
+header img{height:300px;}                                                                                               /* Para las fotos del Slider */
+.fotoplantabus{width: 370px; margin-top: 6em;}
+.plaza{font-size: 0.9em;}
+
+
+@media only screen and (min-width: 570px) and (max-width: 730px) {
+}
+
+
+@media only screen and (min-width: 620px) and (max-width: /*1000*/740px) {
+
+.w-100 {height: 300px!important;}   
+
+.silverfox {height: 620px;/*background:url(http://laya.atwebpages.com/proyectomodohost/web/imagenes/fondo2.png) center center;*/}
+.articulo h3, .articulo h4{font-size: 0.7em;}
+.articulo h2{font-size: 1.4em;}
+.a{width: 360px; height:150px; margin-top: 7em;}
+.plaza{font-size: 0.4em;}
+header img{height:300px;} 
+.fotoplantabus{width: 400px; margin-top: 7em; margin-left: -6em; }
+
+.tres{ padding: 0.2em; margin-bottom: 0.2em;}
+label{font-size: 0.8em;}
+
+
+/* Cards */
+.comunidad {font-size: 1.4em;}
+.fotodestino{ height: 260px;}
+.destino {font-size: 1.2em; margin-bottom: 1.5em; margin-top: 0.5em;}
+.destino a{font-size: 0.7em;}
+.info_plazas { font-size: 0.7em;}
+  
+
+/* Enlaces del toogle*/
+#navbarNavDropdown li a { padding-top: 0.2em; font-size: 1.5em;}
+
+/* Enlaces footer */
+#container_footer h1 {font-size: 1.7em;} 
+#copyright a {font-size: 1.2em;}
+
+}
+
+@media only screen and (min-width: 311px) and (max-width: 620px) {
+
+
+ .w-100 {height: 200px;}
+ .w-100 {height: 100%!important; margin: auto;}
+
+ .tres{padding: 0.2em; margin-bottom: 0.2em;}
+ 
+.a{width: 350px; height:150px; margin-top: 6em;}
+.fotoplantabus{margin-left: -1em; }
+
+
+/* Cards */
+.comunidad{ font-size: 1.4em;}
+.fotodestino{ border-radius: 0.3em; z-index: -1; width: 100%; height: 230px; }
+.destino a{font-size: 0.7em;}
+p .destino a{font-size: 0.7em;}
+.fecha{ font-size: 1.2em; margin-bottom: 1.5em;}
+.info_plazas {font-size: 0.9em;}
+.precio {font-size: 2em; margin-left: 1em;}
+
+/* label{font-size: 1em;}*/
+ .tres{ padding: 0.2em; margin-bottom: 0.2em;}
+ .w-100 {height: 500px!important;}   
+
+ /* Enlaces del toogle*/
+#navbarNavDropdown li a {padding-top: 0.2em; font-size: 1.5em;}
+
+/* Enlaces footer */
+#container_footer h1 {font-size: 1.7em;}
+
+footer h2{ font-size: 1.5em; margin-left: 0.7em;}
+
+}
+
+/* Código para Móvil */
+/*@media only screen and (min-width: 310px) and (max-width: 510px) {  /*510*/
+.plaza{font-size: 0.2em;}
+h3,h2{font-size: 1.2em;}
+header img{padding: 5px;  margin-top: 0em; /*margin-left: -2em;*/}
+.articulo h3, .articulo h4{font-size: 0.6em;}
+.w-100 {height: 300px!important;}                                                                                 /* para las fotos del slider */
+ #a input{border-radius:0.5em; float: right;   margin:0.em; margin-top: -2em; transform: scale(0.75);}
+ .fotoplantabus{margin-left: -10em; margin-top: 6.5em;}
+ label{font-size: 1em;}
+ 
+/*Cards*/
+.fotodestino{height: 220px;}
+.info_plazas {font-size: 0.9em;}
+.articulo .destino a{font-size: 0.9em;}
+ }
+
+@media only screen and (min-width: 100px) and (max-width: 309px) {
+
+img{ width:75px;height:75px;}
+.a{width: 350px; height:150px; margin-top: 6em;}
+.plaza{font-size: 0.2em;}
+h4{font-size: 0.5em;}
+h3{font-size: 0.5em;}
+.fotodestino{margin-top: -4.5em; border-radius: 0.3em; z-index: -1;}
+.front{transform: scale(0.5);}
+label{font-size: 1em;}
+
+.w-100 {height: 200px; margin: auto;}
+
+/* Enlaces del toogle*/
+#navbarNavDropdown li a {padding-top: 0.2em;font-size: 1.5em;}
+}

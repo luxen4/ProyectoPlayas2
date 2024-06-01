@@ -1,0 +1,51 @@
+*{
+    text-align: center;
+ 
+}
+
+#cabecera {
+    background: greenyellow;
+    height: 75px;
+  }
+
+  #tablet{
+    background:cyan;
+    height: 75px;
+  }
+
+
+
+  #morado {
+    background: mediumslateblue;
+    height: 150px;
+    border: solid 1px;
+
+  }
+
+  #grises {
+    background: grey;
+    height: 150px;
+    border: solid 1px;
+  }
+
+  #naranja {
+    background: orange;
+    height: 150px;
+    border: solid 1px;
+  }
+
+  #cian {
+    background: aqua;
+    height: 90px;
+    border: solid 1px;
+  }
+
+  #azules1,
+  #azules2 {
+    display: flex;
+  }
+
+  #verdefooter {
+    background: greenyellow;
+    height: 75px;
+  }

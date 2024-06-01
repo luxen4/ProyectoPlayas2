@@ -1,0 +1,66 @@
+
+Nota: Esta función está hecha con mysqli   https://www.hostinger.es/tutoriales/como-usar-php-para-insertar-datos-en-mysql/
+public function ocuparPlazaBus($codigoDestino,$codCliente,$codBus,$plazasAocupar){  
+
+
+https://www.awardspace.com/user-login/	 entra con google							Host gratuito  superlaya50@gmail.com / alberite2
+https://cp1.awardspace.net/login/?next=ftp-manager&notice=login						superlaya50@gmail.com / alberite2
+
+
+FTP---> laya.atwebpages.com   3714088_laya  villamediana2 21  entrando con superlaya50@gmail.com/alberite2
+FTP---> laya2.atwebpages.com  4009740_laya misma  villamediana2 21  entrando con superlaya51@gmail.com/alberite2
+
+
+
+https://xaviesteve.com/4158/clase-php-mysql-simple-y-facil-de-usar-recomendada/  	BUEN EFECTO
+http://jquery-manual.blogspot.com/2013/08/responsive-design-para-imagenes.html   	Para hacer el archivo
+https://www.tutorialspoint.com/javascript/array_splice.html 						Para web
+http://www.uterra.com/base_datos_mysql/codigo_mysql.php?ref=evitar_registros_duplicados_en_mysql    web bonita
+http://www.rotuprintrioja.com/																		Buen diseño
+https://www.lucushost.com/dominios    																Para copiar la estética
+http://laya.atwebpages.com/          												Tiene un parallax muy bueno
+
+Explicación de como subir al hosting
+https://www.bing.com/videos/search?q=awardspace&&view=detail&mid=ED58CAF403A619A799ABED58CAF403A619A799AB&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dawardspace%26FORM%3DHDRSC3
+
+
+
+Hacer unas diapositivas mostrando todo para explicar al tribunal https://www.webempresa.mx/wordpress/que-es-wordpress.html
+
+
+https://www.laurachuburu.com.ar/tutoriales/enlaces-html.php      para enlaces que abren fotos
+
+Herramientas empleadas para la creación de los Casos de Uso:
+yuml.me
+https://online.visual-paradigm.com/drive/#diagramlist:proj=0&new=UseCaseDiagram
+
+Para plantillas de casos de Uso
+https://infograph.venngage.com/
+https://infograph.venngage.com/templates/recommended
+
+
+<!--https://foro.elhacker.net/bases_de_datos/mysql_como_saber_cuando_no_he_recogido_datos-t282813.0.html   Buenos fondos-->
+
+
+
+
+El select no se le puede cambiar la fecha con el DOM
+
+
+
+
+https://www.inboundcycle.com/blog-de-inbound-marketing/bid/195258/Qu-es-el-funcional-de-un-sitio-web   para inputs de formulario
+<!--https://wpshopmart.com/free-css-cards/-->
+
+
+https://programacion.net/articulo/como_implementar_una_pasarela_de_pago_con_stripe_1994  pasarela de pagos
+
+
+
+
+	https://www.youtube.com/watch?v=qA5AxStYdJw bajar musica
+	https://www.youtube.com/watch?v=NZy9Psx0lMY&list=RD57g3bf4SoNU&index=10
+	https://www.youtube.com/watch?v=Tjeaa0uYA4E&list=RD57g3bf4SoNU&index=4
+	https://www.youtube.com/watch?v=Y-meMutV_uo&list=RD57g3bf4SoNU&index=5
+	https://www.youtube.com/watch?v=VV0t1-8NRK0&list=RDGMEMYH9CUrFO7CfLJpaD7UR85w&index=16
+	https://www.youtube.com/watch?v=gk6bOlDyiio&list=RDGMEMYH9CUrFO7CfLJpaD7UR85w&index=17
