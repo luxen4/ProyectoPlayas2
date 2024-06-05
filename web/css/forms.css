@@ -90,7 +90,7 @@ header img{height:200px;}
 }
 
 @media only screen and (min-width: 810px) and (max-width: 925px) {
-.silverfox {/*background:url(http://laya.atwebpages.com/proyectomodohost/web/imagenes/fondo2.png) center center;*/}
+.silverfox {/*background:url(http://laya.atwebpages.com/playas2024/web/imagenes/fondo2.png) center center;*/}
 .articulo h3, .articulo h4{font-size: 0.9em;}
 header img{height:300px;}                                                                                               /* Para las fotos del Slider */
 .fotoplantabus{width: 370px; margin-top: 6em;}

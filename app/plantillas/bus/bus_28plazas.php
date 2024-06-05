@@ -24,7 +24,7 @@ use miId\fuente\Repositorio\DestinoRepositorio;
 
 </head>
 <body>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/utilidades/utilidades.inc'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/utilidades/utilidades.inc'; ?>
 
 <div class="container"> 
   
@@ -550,7 +550,7 @@ use miId\fuente\Repositorio\DestinoRepositorio;
     <?php 
 
 //require __DIR__ . '/../../../fuente/Repositorio/destinoRepositorio.inc'; 
-require $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/DestinoRepositorio.inc'; 
+require $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/DestinoRepositorio.inc'; 
 
 
 if(!empty($_SESSION['datosdestino'])){
@@ -634,7 +634,7 @@ $_SESSION['destino']=$destino;?>
 </html>
 
 <?php $contenido = ob_get_clean() ?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/plantillas/basefantasma.php';?>
 
 
 

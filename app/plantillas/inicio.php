@@ -18,9 +18,7 @@
 <?php 
 
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Modelo/buscadoresfantasma.inc'; ?>
-
-
+require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Modelo/buscadoresfantasma.inc'; ?>
 
   <script>
         $(".flip").click(function(){
@@ -36,7 +34,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Modelo/buscad
 
 
  <?php $contenido = ob_get_clean() ?>
- <?php include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/plantillas/basefantasma.php' ?>
+ <?php include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/plantillas/basefantasma.php' ?>
       
 
 

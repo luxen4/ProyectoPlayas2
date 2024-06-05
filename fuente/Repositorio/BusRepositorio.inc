@@ -9,7 +9,7 @@ class BusRepositorio
 public function nuevoBus($datos){
     $codAgenciaBuses=$_SESSION['perfil']['cod_AgenciaAutobus'];
             try {
-                include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+                include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
                 $sql = "INSERT INTO BUS (tipo_Bus,plazas,matricula,ano_Matriculacion,cod_AgenciaBuses)
                         VALUES('$datos[tipobus]','$datos[numplazas]','$datos[matricula]','$datos[anomatriculacion]','$codAgenciaBuses')";
 
@@ -33,7 +33,7 @@ public function nuevoBus($datos){
 public function modificarBus($datos, $codBus){
 
     $codBus=$codBus['codbus'];
-    include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; 
+    include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; 
 
     $sql = "UPDATE BUS
             SET tipo_Bus='$datos[tipobus]', plazas='$datos[numplazas]', matricula='$datos[matricula]',ano_Matriculacion='$datos[anomatriculacion]'
@@ -55,7 +55,7 @@ public function modificarBus($datos, $codBus){
 public function eliminarBusAgenciaBusesLogeada($matricula){
     
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; 
         $sql = "DELETE FROM BUS WHERE matricula='$matricula'";
 
         $result = $gbd->query($sql);?>
@@ -79,7 +79,7 @@ public function eliminarBusAgenciaBusesLogeada($matricula){
     public function todosBusesdeUnaAgenciaBuses($codAgenciaBuses){
     //echo("Entro a Repositorio->todosBusesDeUnaAgenciaBuses");    
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; 
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; 
             $sql = "SELECT cod_Bus, tipo_Bus, plazas, matricula, ano_Matriculacion FROM BUS WHERE cod_AgenciaBuses='$codAgenciaBuses'";
             //var_dump($sql);die();
             $result = $gbd->query($sql);
@@ -99,7 +99,7 @@ public function eliminarBusAgenciaBusesLogeada($matricula){
     public function todosBusesdeUnaAgenciaBusesCodAgenciaViajes($codAgenciaViajes){
         
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; 
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; 
             $sql = "SELECT b.cod_Bus, b.tipo_Bus, b.plazas, b.matricula, b.ano_Matriculacion, ab.nombre FROM BUS b
                         INNER JOIN AGENCIABUSES ab ON ab.cod_AgenciaBuses=b.cod_AgenciaBuses
                         INNER JOIN AGENCIAVIAJES av ON av.cod_CompaniaBusHabitual=ab.cod_AgenciaBuses
@@ -126,7 +126,7 @@ public function eliminarBusAgenciaBusesLogeada($matricula){
     public function todosBusesDisponiblesParaUnaAgenciaViajes($codAgenciaViajes){
         
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc';
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc';
 
             $sql = "SELECT distinct ab.nombre,b.cod_Bus/*,ab.cod_AgenciaBuses/*,b.tipo_Bus*/, b.plazas, b.matricula/*, b.ano_Matriculacion, ab.nombre*/ FROM BUS b
                         INNER JOIN AGENCIABUSES ab ON ab.cod_AgenciaBuses=b.cod_AgenciaBuses
@@ -154,7 +154,7 @@ public function eliminarBusAgenciaBusesLogeada($matricula){
   /*  public function todosBusesdeUnaAgenciaBuses($codAgenciaBuses){
         
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
             $sql = "SELECT b.cod_Bus, b.tipo_Bus, b.plazas, b.matricula, b.ano_Matriculacion, ab.nombre FROM BUS b
                         INNER JOIN AGENCIABUSES ab ON ab.cod_AgenciaBuses=b.cod_AgenciaBuses
                         INNER JOIN AGENCIAVIAJES av ON av.cod_CompaniaBusHabitual=ab.cod_AgenciaBuses
@@ -181,7 +181,7 @@ public function eliminarBusAgenciaBusesLogeada($matricula){
        // echo "he entrado a buscaCodBus";
 
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
             $sql = "SELECT cod_Bus FROM DESTINO WHERE cod_Destino='$cod_Destino'";
 
             $result = $gbd->query($sql);  
@@ -201,7 +201,7 @@ public function eliminarBusAgenciaBusesLogeada($matricula){
 public function plazasTotalesBus($codDestino){
   // echo "he entrado plazas totales de un bus";
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; 
         $sql = "SELECT b.plazas FROM BUS b INNER JOIN DESTINO d ON d.cod_Bus=b.cod_Bus WHERE d.cod_Destino='$codDestino'";
 
         $result = $gbd->query($sql);  
@@ -221,7 +221,7 @@ public function plazasTotalesBus($codDestino){
 public function plazasQuedanEnUnBus($codDestino){
     //echo "he entrado plazas quedan en un bus";
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; 
         $sql = "SELECT * from VIAJAR where cod_Destino='$codDestino'";
 
         $result = $gbd->query($sql);  

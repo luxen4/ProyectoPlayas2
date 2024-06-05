@@ -1,7 +1,7 @@
 <?php
-// Función que codifica a utf8 un dato (String), valorando en qué servidor estamos
- function pasarUtf8($nombre){
 
+// Función que codifica a utf8 un dato (String), valorando en qué servidor estamos
+  function pasarUtf8($nombre){
     if($_SERVER['SERVER_NAME']=="localhost"){
       $dato=$nombre;
       return $dato;
@@ -9,11 +9,7 @@
       $dato= utf8_encode ($nombre);
       return $dato;
     }
-
-}
-
-
-
+  }
 ?>
 
 <script>

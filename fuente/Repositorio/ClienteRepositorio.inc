@@ -9,7 +9,7 @@ class ClienteRepositorio
     // Función que busca el hash de un Cliente, parámetros: username(para buscar la contraseña "hash")
     public function hashClienteAgenciaViajes($datos){
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
          
             $sql = "SELECT * /*cod_Cliente,nombre,contrasena,roll*/ FROM CLIENTE WHERE username='$datos[username]'";       
             $result = $gbd->query($sql);
@@ -26,7 +26,7 @@ class ClienteRepositorio
 // Función que devuelve el número de cuenta de un Cliente
    public function numCuentaCorrecto($codCliente){
        //echo "<br>Entro a ClienteRepositorio->numCuentaCorrecto"; 
-    include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+    include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
     try {
         $sql0='SET lc_time_names = "es_ES"';
@@ -48,7 +48,7 @@ class ClienteRepositorio
     
     // Función que inserta un nuevo Destino | Recive un array de datos
     public function nuevoCliente($datos, $hash){
-        include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
         try {
             $sql0='SET lc_time_names = "es_ES"';
@@ -94,7 +94,7 @@ class ClienteRepositorio
 public function modificarCliente($datos, $hashActual, $nuevoHash){
     
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; 
         $sql0='SET lc_time_names = "es_ES"';
         $sql = "UPDATE CLIENTE
         SET /*username='$datos[username]',*/ nombre='$datos[nombre]', apellidos='$datos[apellidos]', nif='$datos[nif]',TlfnoParticular='$datos[tlfnoParticular]',
@@ -125,7 +125,7 @@ public function modificarCliente($datos, $hashActual, $nuevoHash){
     public function darDeBajaCliente($datos, $hashActual){
 
         try {  
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; 
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; 
             $sql = "DELETE FROM CLIENTE WHERE contrasena='$hashActual'";
  
             $result = $gbd->query($sql);?>
@@ -153,7 +153,7 @@ public function modificarCliente($datos, $hashActual, $nuevoHash){
     // El username no se puede cambiar ya que es clave UNIQUE //
     public function darDeBajaClientePorAministrador($datos){
         try {  
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; 
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; 
             $sql = "DELETE FROM CLIENTE WHERE cod_Cliente='$datos[clienteaeliminar]'";
  
             $result = $gbd->query($sql);?>
@@ -181,7 +181,7 @@ public function modificarCliente($datos, $hashActual, $nuevoHash){
     public function mostrarTodosClientes()
     {
         try {
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc';
+            require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc';
             $sql="SELECT cod_Cliente, nombre,apellidos,nif,calle,cp,localidad,provincia,comunidad,pais,email,TlfnoParticular,
             fNacimiento,sexo FROM CLIENTE";
 
@@ -207,7 +207,7 @@ public function modificarCliente($datos, $hashActual, $nuevoHash){
         $contrasena=$_SESSION['perfil']['contrasena'];
      
         try {
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc';
+            require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc';
 
                 $sql="SELECT cod_Cliente,username,nombre,apellidos,nif,TlfnoParticular,email,
                     fNacimiento,sexo,calle,cp,localidad,provincia,comunidad,pais,contrasena,roll FROM CLIENTE 
@@ -233,7 +233,7 @@ public function modificarCliente($datos, $hashActual, $nuevoHash){
         require __DIR__ . '/../../app/conf/configuracionfantasma.inc';
 
         try {
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc';
+            require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc';
             $sql = "DELETE FROM CLIENTE";
             $result = $gbd->query($sql); ?>
             <script>alert("¡TODOS CLIENTES ELIMINADOS CON EXITO!");</script><?php

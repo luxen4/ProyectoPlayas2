@@ -1,10 +1,8 @@
 <?php
 
-
-
 if($_SERVER['SERVER_NAME']=="localhost"){
     $host="localhost";
-    $dbname="proyectoplayasdefinitivo";
+    $dbname="playas";
     $username="root";
     $contrasena="";   
 
@@ -35,10 +33,10 @@ try {
 
 // Así en local
 /*
-                    $dsn = 'mysql:host=localhost;dbname=proyectoplayasdefinitivo;charset=utf8mb4';  
-                    $nombre_usuario = 'root';
-                    $contraseña = '';
-                    $opciones = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'); 
+    $dsn = 'mysql:host=localhost;dbname=proyectoplayasdefinitivo;charset=utf8mb4';  
+    $nombre_usuario = 'root';
+    $contraseña = '';
+    $opciones = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'); 
 */
 
 ?>

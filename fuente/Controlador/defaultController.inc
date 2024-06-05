@@ -12,7 +12,7 @@ class DefaultController{
   public function inicio()
   { 
 
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/DestinoRepositorio.inc';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/DestinoRepositorio.inc';
    
           $destinos = (new DestinoRepositorio())->todosDestinos();  
           //var_dump(count($destinos));die();
@@ -77,11 +77,11 @@ public function logearCliente(){
     if(isset($_POST['logincliente'])){
         $datos=$_POST['datos'];
 
-       //header('Location: /proyectomodohost/index.php');
+       //header('Location: /playas2024/index.php');
 
         //Tenemos que comprobar si la contraseña se encuentra en la base de datos.
 
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/ClienteRepositorio.inc';
+        require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/ClienteRepositorio.inc';
 
         $hash=password_hash($datos['contrasenaactual'],PASSWORD_DEFAULT);
 
@@ -98,7 +98,7 @@ public function logearCliente(){
                     }
                     $todoBien=true;
                     $this->meterIndex();
-                    //header('Location: /proyectomodohost/index.php');
+                    //header('Location: /playas2024/index.php');
                     ?><script>window.location.href="index.php?ctl=inicio";</script><?php
                         
               }else{ ?>
@@ -109,7 +109,7 @@ public function logearCliente(){
           }
     }
     
-    require $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/plantillas/cliente/formLogearCliente.php';
+    require $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/plantillas/cliente/formLogearCliente.php';
 }
 
 
@@ -126,7 +126,7 @@ public function logearAgenciaViajes(){
 
       //Tenemos que comprobar si la contraseña se encuentra en la base de datos.
        require __DIR__ . '/../../fuente/Repositorio/AgenciaViajesRepositorio.inc';
-      // require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/agenciaViajesRepositorio.inc';
+      // require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/agenciaViajesRepositorio.inc';
       $hash=password_hash($datos['contrasenaactual'],PASSWORD_DEFAULT);
       $obj = (new AgenciaViajesRepositorio())->hashAgenciaViajes($datos,$hash);
 
@@ -139,7 +139,7 @@ public function logearAgenciaViajes(){
                                                                                               // Hago una sesión que acoge username y contraseña y roll del usuario logeado en este momento
                   $datos=(new AgenciaViajesRepositorio())->datosAgenciaViajes($datos);
 
-                  require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/AgenciaBusesRepositorio.inc';
+                  require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/AgenciaBusesRepositorio.inc';
                   $codAgenciaBuses=$datos[0]->cod_CompaniaBusHabitual;
                   $codigoAgenciaViajes=$datos[0]->cod_AgenciaViajes;
                   $nombreAgenciaBuses=(new AgenciaBusesRepositorio())->nombreAgenciaBuses($codigoAgenciaViajes);
@@ -191,7 +191,7 @@ public function logearAgenciaBuses(){
 
       //Tenemos que comprobar si la contraseña se encuentra en la base de datos.
       //require __DIR__ . '/../../fuente/Repositorio/AgenciaBusesRepositorio.inc';
-      require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/AgenciaBusesRepositorio.inc';
+      require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/AgenciaBusesRepositorio.inc';
       $hash=password_hash($datos['contrasenaactual'],PASSWORD_DEFAULT);
       $obj = (new AgenciaBusesRepositorio())->hashAgenciaBuses($datos,$hash);
 

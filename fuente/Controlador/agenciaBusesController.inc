@@ -72,7 +72,7 @@ public function eliminarAgenciaBusesLogeada(){
 // Función que permite modificar los datos de la Agencias de Bus logeada.
 public function modificacionInfoAgenciaBusesLogeada(){ 
   
-  require $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/AgenciaBusesRepositorio.inc';
+  require $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/AgenciaBusesRepositorio.inc';
     $agenciaBuses = (new AgenciaBusesRepositorio())->datosAgenciaBusesLogeada();
 
     if(isset($_POST['modificardatosagenciabuseslogeada'])){
@@ -107,7 +107,7 @@ public function modificacionInfoAgenciaBusesLogeada(){
 // Función que muestra los datos de la Agencia de Buses logueada.
 public function mostrarInfoAgenciaBusesLogeada(){
 
-    require $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/AgenciaBusesRepositorio.inc';
+    require $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/AgenciaBusesRepositorio.inc';
     $agenciaBuses = (new AgenciaBusesRepositorio())->datosAgenciaBusesLogeada();
 
     require __DIR__ . '/../../app/plantillas/agenciaBuses/mostrarInfoAgenciaBusesLogeada.php';

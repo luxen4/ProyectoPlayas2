@@ -1,7 +1,7 @@
 <?php
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/utilidades/utilidades.inc'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/utilidades/utilidades.inc'; ?>
 <div class="container" >
 <div  class="silverfoxv">
             <div class="row">
@@ -122,7 +122,7 @@
 
 
                     try {
-                        include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc';
+                        include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc';
 
                         $sqlCodigoBus="SELECT distinct cod_Bus FROM DESTINO
                                 WHERE cod_Destino=$codDestino";

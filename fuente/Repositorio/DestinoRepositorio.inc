@@ -9,7 +9,7 @@ public function nuevoDestino($datos){
         $cod_AgenciaViajes=$_SESSION['perfil']['cod_AgenciaViajes'];
 
             try {
-                include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+                include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
                 $sql0='SET lc_time_names = "es_ES"';
 
@@ -43,7 +43,7 @@ public function nuevoDestino($datos){
 // Función que borra un destino "creado por una Agencia de Viajes"
 public function borrarUnDestino($codDestino){
     try {  
-        include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
         $sql=" DELETE FROM DESTINO WHERE cod_Destino='$codDestino'";
 
     //var_dump($sql);die();
@@ -60,7 +60,7 @@ public function borrarUnDestino($codDestino){
 // Función que modifica los datos de un destino "creado por una Agencia de Viajes"
 public function modificarUnDestino($datos, $codDestino){
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
         $sql="UPDATE DESTINO
                   SET nombre_Lugar='$datos[nombre]',prov_Depart='$datos[provinciadepartamento]',com_Reg='$datos[comunidadregion]',pais='$datos[pais]',
                   dia_Semana= ELT(WEEKDAY('$datos[fechaviaje]') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),
@@ -100,7 +100,7 @@ public function modificarUnDestino($datos, $codDestino){
 // Función que muestra todos los destinos
 public function todosDestinos(){
         try {  
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
             $sql="SELECT  d.cod_Destino,d.nombre_Lugar,d.prov_Depart,d.com_Reg,d.pais,d.dia_Semana,d.fecha_Viaje,b.matricula,av.nombre,d.euros 
             FROM DESTINO d 
@@ -125,7 +125,7 @@ public function todosDestinos(){
 // Función que nos da la info de plazas de un Bus de un destino
 public function plazasBusViaje(){
     try {  
-        include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
             $sql2="SELECT b.plazas,sum(v.plaza_Bus) FROM VIAJAR v
                             INNER JOIN BUS b ON v.cod_Bus=b.cod_Bus
@@ -144,7 +144,7 @@ public function plazasBusViaje(){
 // Función que busca los Destinos por fecha
 public function todosDestinosPorFecha($datos){
     try {  
-        include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
         $sql="SELECT d.cod_Destino,d.nombre_Lugar,d.com_Reg,d.fecha_Viaje,d.dia_Semana, d.euros,
         d.cod_AgenciaOferta, av.nombre FROM DESTINO d INNER JOIN AGENCIAVIAJES av ON d.cod_AgenciaOferta=av.cod_AgenciaViajes 
         WHERE d.fecha_Viaje='$datos[fechaviaje]'";
@@ -164,7 +164,7 @@ public function todosDestinosPorFecha($datos){
 // Función que busca los Destinos por Destino
 public function todosDestinosPorDestino($datos){
    try {   
-    include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+    include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
         $sql="SELECT d.cod_Destino,d.nombre_Lugar,d.com_Reg,d.fecha_Viaje,d.dia_Semana, d.euros,
         d.cod_AgenciaOferta, av.nombre FROM DESTINO d INNER JOIN AGENCIAVIAJES av ON d.cod_AgenciaOferta=av.cod_AgenciaViajes 
         WHERE nombre_Lugar='$datos[lugardestino]' and d.fecha_Viaje >=CURDATE() ORDER BY d.fecha_Viaje ASC ";  // No va a salir Laredo que es del verano 2021 //
@@ -185,7 +185,7 @@ public function todosDestinosPorDestino($datos){
 // Función que busca todos los destinos a los que va a dar servicio una Agencia de Buses
  public function todosDestinosPorAgenciaBuses($datos){
      try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
         $sql="SELECT d.cod_Destino, d.nombre_Lugar,d.prov_Depart, d.com_Reg, d.pais, d.dia_Semana, d.fecha_Viaje,
                     d.kilometrosIdaVuelta, d.euros, b.matricula, b.plazas FROM DESTINO d INNER JOIN BUS b ON d.cod_Bus=b.cod_bus
                      WHERE b.cod_AgenciaBuses='$datos'";
@@ -206,7 +206,7 @@ public function todosDestinosPorDestino($datos){
  // Función que busca los nombres de los lugares de los Destinos (para el Select de las búsquedas que no se repitan)
  public function soloAgenciasDeViajes(){
             try {
-              include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+              include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
                 $sql = "SELECT * FROM AGENCIAVIAJES"; 
 
                 $acentos = $gbd->query("SET NAMES 'utf8'");
@@ -225,7 +225,7 @@ public function todosDestinosPorDestino($datos){
  // Función que busca los nombres de los lugares de los Destinos (para el Select de las búsquedas que no se repitan)
  public function soloLugares(){
             try {
-                include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+                include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
                 $sql="SELECT DISTINCT nombre_Lugar FROM DESTINO ";
 
                 $result = $gbd->query($sql); 
@@ -246,7 +246,7 @@ public function todosDestinosPorAgenciaViajes($codigoAgenciaViajes){
    // var_dump($codigoAgenciaViajes['agenciaviajes']);
     $codigoAgenciaViajes=$codigoAgenciaViajes["agenciaviajes"];
             try {   
-                include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+                include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
                
                     $sql="SELECT d.cod_Destino,d.nombre_Lugar,d.prov_Depart,d.com_Reg,d.pais,d.dia_Semana,d.fecha_Viaje,d.kilometrosIdaVuelta,b.matricula,d.euros,
                         /*d.cod_AgenciaOferta,*/ av.nombre FROM DESTINO d 
@@ -271,7 +271,7 @@ public function todosDestinosPorAgenciaViajes($codigoAgenciaViajes){
  public function todosDestinosPorDia($datos){
    
         try { 
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
             $sql0='SET lc_time_names = "es_ES"';
             $sql="SELECT d.cod_Destino,d.nombre_Lugar,d.prov_Depart,d.com_Reg,d.pais,d.dia_Semana,d.fecha_Viaje,av.nombre,d.euros, d.cod_AgenciaOferta 
             FROM DESTINO d INNER JOIN AGENCIAVIAJES av ON av.cod_AgenciaViajes=d.cod_AgenciaOferta
@@ -294,7 +294,7 @@ public function todosDestinosPorAgenciaViajes($codigoAgenciaViajes){
   public function nombreDestinoSeleccionado($codigDestino){
   
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
             $sql="SELECT d.cod_Destino,d.nombre_Lugar,d.prov_Depart,d.com_Reg,d.pais,d.dia_Semana,d.fecha_Viaje,av.nombre,d.kilometrosIdaVuelta, d.euros, d.cod_AgenciaOferta 
             FROM DESTINO d INNER JOIN AGENCIAVIAJES av ON d.cod_AgenciaOferta=av.cod_AgenciaViajes 
             WHERE d.cod_Destino='$codigDestino' ORDER BY d.fecha_Viaje ASC ";
@@ -314,7 +314,7 @@ public function todosDestinosPorAgenciaViajes($codigoAgenciaViajes){
 // Función que busca todos los destinos contratados por un cliente.         (Después se genera el PDF)
 public function infoDestino($cod_destino){
          try {
-             include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc';                
+             include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc';                
  
             // $sql=  "SELECT * FROM DESTINO WHERE cod_Destino='$cod_destino'";
 
@@ -338,7 +338,7 @@ public function infoDestino($cod_destino){
 // Función que busca todos los destinos contratados por un cliente.
  public function destinosDeUnClienteLogueado($cod_Cliente){
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE             
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE             
 
             $sql="SELECT d.cod_Destino,d.nombre_Lugar, d.fecha_Viaje, av.nombre, av.telefono_Reserva, av.lugar_SalidaPredeterminado,
                             v.cod_Bus,v.plaza_Bus FROM VIAJAR v
@@ -362,7 +362,7 @@ public function infoDestino($cod_destino){
 // Función que busca la información de un Billete contratado por un Cliente.         (Después se genera el PDF)
 public function destinosContratado($cod_destino,$plaza_Bus){
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc';                
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc';                
 
             $sql=  "SELECT d.cod_Destino,d.nombre_Lugar, d.fecha_Viaje,
                             av.nombre, av.telefono_Reserva,	av.lugar_SalidaPredeterminado,
@@ -388,7 +388,7 @@ public function destinosContratado($cod_destino,$plaza_Bus){
 // Función que cancela un billete ya comprado de un cliente desde la tabla "Tus Destinos contratados"
 public function cancelarBillete($codDestino,$codCliente,$plaza):bool{
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc';                
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc';                
             $gbd = new \PDO("mysql:host=$host;dbname=$dbname", $username, $contrasena);
 
             $sql=  "DELETE FROM VIAJAR WHERE cod_Destino='$codDestino' AND cod_Cliente='$codCliente' AND plaza_Bus='$plaza'";

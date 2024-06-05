@@ -21,7 +21,7 @@ if(!empty($plazasAocupar["asientoseleccionado"])){          // Servidor gratuito
     $sql="SELECT * FROM VIAJAR WHERE cod_Destino= $cod_Destino AND cod_Cliente=$codCliente AND cod_Bus=$codBus AND plaza_Bus=$plazasAocupar";	
 
 
-    include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+    include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
     $result = $gbd->query($sql); 
     $results = $result -> fetchAll(\PDO::FETCH_OBJ); 
@@ -47,7 +47,7 @@ public function ocuparPlazaBus($codigoDestino,$codCliente,$codBus,$plazasAocupar
         $sql="INSERT INTO VIAJAR (cod_Destino,cod_Cliente,cod_Bus,plaza_Bus)	
         VALUES ($codigoDestino,$codCliente,$codBus,$plaza)";
 
-        include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionmysqli.inc'; // Modo MySql, si no, no lo hago tragar
+        include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionmysqli.inc'; // Modo MySql, si no, no lo hago tragar
 
         if (mysqli_query($conn, $sql)) { 
             ?><script>alert("BRAVO, plaza reservada \n BUÉN VIAJE!");</script><?php //echo "Nueva Plaza Asignada"; die();
@@ -62,7 +62,7 @@ public function ocuparPlazaBus($codigoDestino,$codCliente,$codBus,$plazasAocupar
  // VERSION-2      
 // Función que hace ver los nombres de los ocupantes de las plazas de bus                                    
 public function infoOcupacionBus($cod_Destino){  
-  /*  include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; 
+  /*  include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; 
         try {
             $sql="SELECT * FROM VIAJAR WHERE cod_Destino='$cod_Destino' ORDER BY plaza_Bus asc";
 
@@ -83,7 +83,7 @@ public function infoOcupacionBus($cod_Destino){
 
 
         try {   
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
             $sql="SELECT * FROM VIAJAR WHERE cod_Destino='$cod_Destino' ORDER BY plaza_Bus asc";
         
                 $result = $gbd->query($sql); 
@@ -100,7 +100,7 @@ public function infoOcupacionBus($cod_Destino){
 
 // Función que devuelve el nombre de un ocupante
 public function nombreClienteOcupacionPlaza($codDestino){
-    include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+    include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
             try {
                     
@@ -135,7 +135,7 @@ public function nombreClienteOcupacionPlaza($codDestino){
 // Función que hace desocupar una plaza un cliente (params codDestino, codCliente)                                  
 public function desOcuparPlazaBus($codDestino,$plaza){
    echo "entro en desOcuparPlazaBus"; die();
-    include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+    include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
         try {
             $sql="DELETE FROM  VIAJAR WHERE plaza_Bus='$plaza' AND cod_Destino='$codDestino'";
             var_dump($sql);die();

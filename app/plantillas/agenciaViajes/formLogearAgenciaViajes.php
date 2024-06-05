@@ -59,7 +59,7 @@
 
 <?php $contenido = ob_get_clean() ?>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/plantillas/basefantasma.php';?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/plantillas/basefantasma.php';?>
 
 
 

@@ -9,7 +9,7 @@ class AgenciaViajesRepositorio
     public function hashAgenciaViajes($datos)
     {
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
             $sql="SELECT contrasena FROM AGENCIAVIAJES WHERE username='$datos[username]'";
             $result = $gbd->query($sql);
 
@@ -30,7 +30,7 @@ class AgenciaViajesRepositorio
     public function datosAgenciaViajes($datos)
     {
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
             $sql="SELECT cod_AgenciaViajes,nombre,nif,direcion,cp,localidad,provincia,comunidad,pais,
                 email,telefono_Reserva,telefono_Agencia,horario_Agencia,lugar_SalidaPredeterminado,cod_CompaniaBusHabitual,username,contrasena,
                 pago_Online,num_CuentaPagosOnline,roll 
@@ -56,7 +56,7 @@ class AgenciaViajesRepositorio
     {
     //  var_dump($datos);die();  
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
         
             $horario=$datos['horaEntrManana'] . " a " . $datos['horaSalManana'] . " y " . $datos['horaEntrTarde'] . " a " . $datos['horaSalTarde'] ;
 
@@ -96,7 +96,7 @@ class AgenciaViajesRepositorio
         $horario=$datos['horaEntrManana'] . " a " . $datos['horaSalManana'] . " y " . $datos['horaEntrTarde'] . " a " . $datos['horaSalTarde'] ;
 
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
             $sql="INSERT INTO AGENCIAVIAJES (/*codigoAgencia*/fecha_Inscripcion,nombre,nif,direcion,cp,localidad,provincia,comunidad,pais,
             email,telefono_Reserva,telefono_Agencia,horario_Agencia,lugar_SalidaPredeterminado,cod_CompaniaBusHabitual, 
@@ -137,7 +137,7 @@ class AgenciaViajesRepositorio
 
         if (!empty($cod_AgenciaViajes)) {
             try {
-                include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+                include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
                 $sql="INSERT INTO RELACIONAGENCIAS (/*cod_RelacionAgencias*/cod_AgenciaViajes,cod_AgenciaBuses,fecha_Inscripcion)
                         VALUES	('$cod_AgenciaViajes', '$cod_AgenciaBuses', default)";
 //var_dump($sql);die();
@@ -166,7 +166,7 @@ class AgenciaViajesRepositorio
      /* Modificar preferencias entre Agencias */
      public function eliminarRelacionAgenciasViajesBuses($cod_AgenciaViajes){
             try {
-                include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+                include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
                 $sql="DELETE FROM RELACIONAGENCIAS WHERE cod_AgenciaViajes='$cod_AgenciaViajes'";
 
             
@@ -195,7 +195,7 @@ class AgenciaViajesRepositorio
     public function todasAgenciasDeViajes(){
         //echo "Estoy en AgenciaViajesRepositorio->todasAgenciasDeViajes";//die();
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
             $sql="SELECT cod_AgenciaViajes,nombre,direcion,localidad,telefono_Agencia,horario_Agencia,lugar_SalidaPredeterminado/*,codAgenciaViajes*/ FROM AGENCIAVIAJES";
            
             $result = $gbd->query($sql);
@@ -218,7 +218,7 @@ class AgenciaViajesRepositorio
     public function todasAgenciasDeViajesDondeSeEsSocio($codUsuarioCliente){
       //  echo "Estoy en AgenciaViajesRepositorio->todasAgenciasDeViajesDondeSeEsSocio"; //die();
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
               //  $sql="SELECT nombre,direcion,localidad,telefono_Agencia,horario_Agencia,lugar_SalidaPredeterminado/*,codAgenciaViajes*/ FROM AGENCIAVIAJES";
            
                $sql="SELECT av.cod_AgenciaViajes, av.nombre,av.direcion,av.localidad,av.telefono_Agencia,av.horario_Agencia,av.lugar_SalidaPredeterminado FROM AGENCIAVIAJES av
@@ -248,7 +248,7 @@ class AgenciaViajesRepositorio
     public function codigoAgenciasDeViajes($nombreAgenciaViajes){
   
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
             $sql="SELECT cod_AgenciaViajes FROM AGENCIAVIAJES where nombre='$nombreAgenciaViajes'";
             $result = $gbd->query($sql);
 
@@ -265,7 +265,7 @@ class AgenciaViajesRepositorio
         public function codigoAgenciasDeViajes2($hash){
 
             try {
-                include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+                include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
                 $sql="SELECT cod_AgenciaViajes FROM AGENCIAVIAJES where contrasena='$hash'";
                 $result = $gbd->query($sql);
     
@@ -283,7 +283,7 @@ class AgenciaViajesRepositorio
         $usernamee=$_SESSION['perfil']['username'];  $contrasenaa=$_SESSION['perfil']['contrasena'];
 
         try {  
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
             $sql="SELECT  fecha_Inscripcion,nombre,nif,direcion,cp,
                   localidad,provincia,comunidad,pais, 
                   email,telefono_Reserva,telefono_Agencia,
@@ -307,7 +307,7 @@ class AgenciaViajesRepositorio
        // var_dump($codigoAgenciaViajes);die();
       //$codAgenciaViajes=$codigoAgenciaViajes[0]->cod_AgenciaViajes; //die();
             try {
-                include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+                include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
                 $sql="INSERT INTO AGENCIAVIAJESCLIENTE (cod_Agenciaviajes, cod_Cliente/*,fechaInscripcion*/)
                 VALUES	('$codigoAgenciaViajes','$datos[cod_Cliente]')";
 
@@ -333,7 +333,7 @@ class AgenciaViajesRepositorio
     public function eliminarSocioAgenciasDeViajes($codCliente, $codigoAgenciaViajes){
        
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
             $sql="DELETE FROM AGENCIAVIAJESCLIENTE WHERE cod_Agenciaviajes='$codigoAgenciaViajes' and cod_Cliente='$codCliente'"; 
 
             //var_dump($sql);
@@ -362,7 +362,7 @@ if ($result) {?>
 // Función con la que el administrador mediante los checkboxes elimina Agencia de Viajes
    public function eliminarAgenciasDeViajes($cod_AgenciaViajes){
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
     
         $sql="DELETE FROM AGENCIAVIAJES WHERE cod_AgenciaViajes='$cod_AgenciaViajes'";
 
@@ -387,7 +387,7 @@ if ($result) {?>
                  
    public function eliminarAgenciaViajesLogeada($cod_AgenciaViajes){
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
     
         $sql="DELETE FROM AGENCIAVIAJES WHERE cod_AgenciaViajes='$cod_AgenciaViajes'";
 

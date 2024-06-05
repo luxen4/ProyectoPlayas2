@@ -16,10 +16,10 @@ class BusController
 
                 try {
                     //require __DIR__ . '/../../fuente/Modelo/Bus.inc';   // Ha entrado //
-                    require $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Modelo/Bus.inc';    // Para el host
+                    require $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Modelo/Bus.inc';    // Para el host
                     $bus = new Bus($datos);
 
-                    require $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/BusRepositorio.inc';
+                    require $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/BusRepositorio.inc';
                     $datos = (new BusRepositorio())->nuevoBus($datos);
                     
                     ?><script>window.location.href="index.php?ctl=inicio";</script><?php
@@ -43,7 +43,7 @@ class BusController
 // Función que muestra la planta de un bus.
     public function motrarPlantaBus(){
                                   // require __DIR__ . '/../../fuente/Repositorio/ViajarRepositorio.inc';
-        require $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/ViajarRepositorio.inc';  // Para el host
+        require $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/ViajarRepositorio.inc';  // Para el host
 
         if(!empty($_SESSION['datosdestino'])){
             $cod_Destino = $_SESSION['datosdestino'];
@@ -61,7 +61,7 @@ class BusController
     }
 
         //require __DIR__ . '/../../fuente/Repositorio/busRepositorio.inc';
-        require $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/BusRepositorio.inc';      // Para el host
+        require $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/BusRepositorio.inc';      // Para el host
         $codBus = (new BusRepositorio())->buscaCodBus($cod_Destino);
 
         // Ocupacion del bus
@@ -69,7 +69,7 @@ class BusController
        // var_dump(count($ocupacionBus));//die();                                            // Tengo que valorar si el bus ya va completo
 
         // Necesito las plazas totales del bus
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/BusRepositorio.inc';
+        require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/BusRepositorio.inc';
         $plazasBusTotales = (new BusRepositorio())->plazasTotalesBus($cod_Destino);
 
         $plazasBusTotales=($plazasBusTotales[0]->plazas);//die(); ?><br><?php
@@ -106,7 +106,7 @@ class BusController
         
                     // Necesito saber si ese número de cuenta es el del Cliente
                                                                                                                                                                 //var_dump($info);die(); 
-                        require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/ClienteRepositorio.inc';
+                        require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/ClienteRepositorio.inc';
                         $numCuentaCorrecto = (new ClienteRepositorio())->numCuentaCorrecto($codCliente);
                                                                                                                                                                 /*
                                                                                                                                                                 var_dump($numCuentaCorrecto[0]->num_Cuenta);
@@ -172,11 +172,11 @@ class BusController
                  $datos = $_POST['datos'];
                 
                 try {
-                    require $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Modelo/Bus.inc';    // Para el host
+                    require $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Modelo/Bus.inc';    // Para el host
                     $bus = new Bus($datos);
 
                    // require __DIR__ . '/../../fuente/Repositorio/BusRepositorio.inc';
-                    require $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/BusRepositorio.inc';
+                    require $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/BusRepositorio.inc';
 
                     $datos = (new BusRepositorio())->modificarBus($datos, $codBus);
                     ?><script>window.location.href="index.php?ctl=todosbusesdeunaagenciabuses";</script><?php
@@ -206,7 +206,7 @@ class BusController
     public function todosBusesdeUnaAgenciaBuses(){
     
         $codAgenciaBuses = $_SESSION['perfil']["cod_AgenciaAutobus"];
-        require $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/BusRepositorio.inc';   // Para el host
+        require $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/BusRepositorio.inc';   // Para el host
 
         $buses = (new BusRepositorio())->todosBusesdeUnaAgenciaBuses($codAgenciaBuses);
       

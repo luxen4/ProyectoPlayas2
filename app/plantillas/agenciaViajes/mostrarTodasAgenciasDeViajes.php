@@ -14,7 +14,7 @@
 
 </head>
 <body>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/utilidades/utilidades.inc'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/utilidades/utilidades.inc'; ?>
     <div class="container">
         <div class="row">
             <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
@@ -227,5 +227,5 @@ if (!empty($_SESSION['perfil'])) {
 
 <?php $contenido = ob_get_clean() ?>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/plantillas/basefantasma.php';?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/plantillas/basefantasma.php';?>
 

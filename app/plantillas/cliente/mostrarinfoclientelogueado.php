@@ -13,7 +13,7 @@
 
 </head>
 <body>
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/utilidades/utilidades.inc'; ?>  <!--https://www.baulphp.com/como-usar-include-y-require-en-php-ejemplos/ -->
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/utilidades/utilidades.inc'; ?>  <!--https://www.baulphp.com/como-usar-include-y-require-en-php-ejemplos/ -->
 
 
 
@@ -71,5 +71,5 @@
 
 <?php $contenido = ob_get_clean() ?>
 
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/plantillas/basefantasma.php';?>
 

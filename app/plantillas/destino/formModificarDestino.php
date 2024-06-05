@@ -19,7 +19,7 @@
   <link rel="stylesheet" type="text/css" href="web/css/styles.css">
 </head>
 <body>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/utilidades/utilidades.inc'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/utilidades/utilidades.inc'; ?>
 
 <div class="container">
 <div class="row">
@@ -222,7 +222,7 @@
 
 <?php $contenido = ob_get_clean() ?>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/plantillas/basefantasma.php';?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/plantillas/basefantasma.php';?>
 
 <!--
 <?php if(isset($_SESSION['perfil'])){ if ($_SESSION['perfil']['roll']=="agenciabuses"){?> disabled <?php }}?>><br>  

@@ -30,7 +30,7 @@ $busesOtrasCompanias = (new BusRepositorio())-> todosBusesDisponiblesParaUnaAgen
                   require __DIR__ . '/../../fuente/Modelo/Destino.inc';  
                   $destino =  new Destino ($datos);
       
-                  require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/DestinoRepositorio.inc';
+                  require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/DestinoRepositorio.inc';
                   $obj = (new DestinoRepositorio())->nuevoDestino($datos);
                   ?><script>window.location.href="index.php?ctl=inicio";</script><?php
 
@@ -59,13 +59,13 @@ public function modificarDestino(){}
   public function mostrarTodosDestinos(){  
      //echo "estoy en mostrar todos destinos"; die();
     
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/DestinoRepositorio.inc';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/DestinoRepositorio.inc';
     $destinos = (new DestinoRepositorio())->todosDestinos();  
 
 
     // Para buscar las plazas
     $plazasTotalesCadaBus=[];  $plazasQuedanCadaBus=[];     $plazasDisponibles=[];
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/BusRepositorio.inc';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/BusRepositorio.inc';
 
     for($i=0; $i<count($destinos); $i++){
 
@@ -101,7 +101,7 @@ public function modificarDestino(){}
                    // Necesito la planta del bus
                     ?><script>window.location.href="index.php?ctl=motrarplantabus";</script><?php
                     
-                    require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/ViajarRepositorio.inc';
+                    require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/ViajarRepositorio.inc';
                     
                     $datos = (new ViajarRepositorio())->ocuparPlazaBus($codigoDestino,$codCliente,$plazasAocupar);
 
@@ -119,12 +119,12 @@ public function modificarDestino(){}
   public function mostrarTodosDestinosQueVaUnaAgenciaBusesLogeada(){ //echo "entro a mostrarTodosDestinosQueVaUnaAgenciaBusesLogeada controller"; //die();
     $cod_AgenciaBusesLogeada=$_SESSION['perfil']['cod_AgenciaAutobus'];
 
-    require $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/DestinoRepositorio.inc';
+    require $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/DestinoRepositorio.inc';
     $destinos = (new DestinoRepositorio())->todosDestinosPorAgenciaBuses($cod_AgenciaBusesLogeada);  
 
     // Para buscar las plazas
     $plazasTotalesCadaBus=[];  $plazasQuedanCadaBus=[];     $plazasOcupadas=[];
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/BusRepositorio.inc';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/BusRepositorio.inc';
 
     for($i=0; $i<count($destinos); $i++){
 
@@ -192,7 +192,7 @@ public function modificarDestino(){}
 
     /*    if(isset($_SESSION['perfil'])){
             if ($_SESSION['perfil']['roll']=="agenciaviajes") {
-              require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/AgenciaBusesRepositorio.inc';
+              require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/AgenciaBusesRepositorio.inc';
               $agenciaViajes= (new AgenciaBusesRepositorio())->codigoAgenciaBuses();
               $codAgenciaBuses=$agenciaViajes[0]->cod_CompaniaBusHabitual;
               //var_dump($agenciaViajes[0]->cod_CompaniaBusHabitual);die();
@@ -203,7 +203,7 @@ public function modificarDestino(){}
         if(isset($_SESSION['perfil'])){
           if ($_SESSION['perfil']['roll']=="agenciaviajes") {
             $codAgenciaViajes=$_SESSION['perfil']['cod_AgenciaViajes']; 
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/AgenciaBusesRepositorio.inc';
+            require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/AgenciaBusesRepositorio.inc';
             $busesCompania = (new BusRepositorio())-> todosBusesdeUnaAgenciaBusesCodAgenciaViajes($codAgenciaViajes);
             $todosBusesCompanias =  (new BusRepositorio())->  todosBusesDisponiblesParaUnaAgenciaViajes($codAgenciaViajes);
           }
@@ -219,7 +219,7 @@ public function modificarDestino(){}
               require __DIR__ . '/../../fuente/Modelo/Destino.inc';  
               $destino =  new Destino ($datos);
   
-              require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/DestinoRepositorio.inc';
+              require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/DestinoRepositorio.inc';
 
               $obj=(new DestinoRepositorio())->modificarUnDestino($datos,$codDestino);
 
@@ -244,13 +244,13 @@ public function modificarDestino(){}
   // Función que muestra todos los destinos de una Agencia de Viajes Logueada
   public function mostrarTodosDestinosDeAgenciaViajesLogeada(){ //echo "mostrarTodosDestinosDeAgenciaViajesLogeada"; //die();
     //echo "entro"; die();
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/DestinoRepositorio.inc';
+        require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/DestinoRepositorio.inc';
             $cod_AgenciaViajesLogeada=$_SESSION['perfil']['cod_AgenciaViajes'];
             $destinos = (new DestinoRepositorio())->todosDestinosPorAgenciaViajes($cod_AgenciaViajesLogeada);  //var_dump($destinos);die();
 
     // Para buscar las plazas
     $plazasTotalesCadaBus=[];  $plazasQuedanCadaBus=[];     $plazasOcupadas=[];
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/BusRepositorio.inc';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/BusRepositorio.inc';
 
     for($i=0; $i<count($destinos); $i++){
 
@@ -371,7 +371,7 @@ public function destinosPorDia(){
 
 // Función que muestra los destinos a los que se ha apuntado un cliente.
 public function tusDestinosContratados(){
-      require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Repositorio/DestinoRepositorio.inc';
+      require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Repositorio/DestinoRepositorio.inc';
               $cod_Cliente=$_SESSION['perfil']["cod_Cliente"];
               $destinosContratados = (new DestinoRepositorio())->destinosDeUnClienteLogueado($cod_Cliente);  
 
@@ -414,7 +414,7 @@ public function tusDestinosContratados(){
 //header('Location: index.php?ctl=tusdestinoscontratados');   
 //header('Location: index.php?ctl=generarpdf');
 
-//require $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/app/plantillas/destino/tusDestinosContratadoss.php';
+//require $_SERVER['DOCUMENT_ROOT'] . '/playas2024/app/plantillas/destino/tusDestinosContratadoss.php';
 
 // Función que muestra todos los destinos por Agencia de Viajes seleccionada                            // POR HACER, es una función de usuario//
 /*public function destinosPorDiaFiltrados(){

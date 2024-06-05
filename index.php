@@ -1,18 +1,19 @@
 <?php
 //index.php
+
 session_start();
 error_reporting(E_ALL);
 
 
 require_once __DIR__ . '/app/conf/rutas.inc'; /*Ubicación del archivo de rutas*/
 /*controladores */
-require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Controlador/defaultController.inc'; 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Controlador/destinoController.inc'; 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Controlador/clienteController.inc'; 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Controlador/agenciaViajesController.inc';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Controlador/busController.inc';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Controlador/agenciaBusesController.inc';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/proyectomodohost/fuente/Controlador/pdfController.inc';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Controlador/defaultController.inc'; 
+require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Controlador/destinoController.inc'; 
+require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Controlador/clienteController.inc'; 
+require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Controlador/agenciaViajesController.inc';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Controlador/busController.inc';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Controlador/agenciaBusesController.inc';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/playas2024/fuente/Controlador/pdfController.inc';
 
 // Parseo de la ruta
 if (isset($_GET['ctl']))
